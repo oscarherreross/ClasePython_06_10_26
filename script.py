@@ -1,4 +1,4 @@
-#muestra solo valores únicos
+# #muestra solo valores únicos
 numeros_set = {1,2,2,3,4,5,5,5}
 print(numeros_set)
 
@@ -57,3 +57,48 @@ while numero <= 350:
     if (numero % 5 == 0) and (numero % 7 == 0):
         print(numero)
     numero += 1
+
+def suma(a,b):
+    return a + b
+
+print(suma(3,5))
+
+def suma(a,b):
+    """Suma dos números."""
+    return a + b
+
+print(suma.__doc__)
+
+def saludar (nombre):
+    """Saluda a la persona con el nombre proporcionado."""
+    return f"Hola, {nombre}!"
+print(saludar("Aurelio"))
+
+def calcular_promedio(numeros):
+    total = 0
+    # Completa el bucle y el return
+    for numero in numeros:
+        total += numero
+
+    cantidad = len(numeros)
+
+    return total/cantidad
+
+def presentarse(nombre, apellido, edad):
+    # Devuelve el mensaje
+    return(f"Hola, me llamo {nombre} {apellido} y tengo {edad} años.")
+
+def area_cuadrado(lado):
+    # Escribe el docstring y el return
+    """Devuelve el area del cuadrado"""
+    return lado * lado
+
+def area_triangulo(base, altura):
+    # Escribe el docstring y el return
+    """Devuelve el area del triangulo"""
+    return base * altura /2
+
+# Calcula area_total
+area_total = area_cuadrado(10) + 5 * area_triangulo(2,4)
+print(area_total)
+
