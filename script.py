@@ -102,3 +102,51 @@ def area_triangulo(base, altura):
 area_total = area_cuadrado(10) + 5 * area_triangulo(2,4)
 print(area_total)
 
+def cuentaCaracteres(cadena):
+    """Cuenta la cantidad de caracteres en una cadena."""
+    if type(cadena) == str:
+        return len(cadena)
+    else:
+        return "Debo ser ejecutada con un string"
+
+print(cuentaCaracteres("Hola, soy una cadena de texto"))
+
+def ultimo_caracter(texto):
+    # tu código aquí
+    if type(texto) == str:
+        return texto[-1]
+    else:
+        return "Debo ser ejecutada con un string"
+
+def comparar(a,b):
+    if a == b:
+        return "Son iguales"
+    elif a < b:
+        return "El segundo es mayor"
+    else:
+        return "El primero es mayor"
+
+def contar_letra(texto,letra):
+    contador = 0
+    for caracter in texto:
+        if caracter.lower() == letra.lower():
+            contador += 1
+    return contador
+
+def cuenta_atras(n):
+    # Escribe el while con su condición
+    while n > 0:
+        if n % 4 == 0:
+            print("Pum!")
+        else:
+            print(n)
+        n -= 1
+    print("¡Despegue!")
+cuenta_atras(8)
+
+def venta_online(pedido, fecha_entrega, incidencia=False):
+    # Devuelve el mensaje según la incidencia
+    if incidencia:
+        return "Contacte con Att. Cliente"
+    else:
+        return f"Su pedido {pedido} se entregará el {fecha_entrega}"
