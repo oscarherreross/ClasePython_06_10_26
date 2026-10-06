@@ -27,3 +27,11 @@ elif len(contraseña) > longitud_maxima:
     print(f"La contraseña es muy larga. No debe exceder {longitud_maxima} caracteres.")
 else:
     print("La contraseña es válida. Contraseña aceptada.")
+
+personas = ["PERSONA1", "PERSONA2", "PERSONA3", "PERSONA4"]
+for persona in personas:
+    print(persona)
+
+colores = ["rojo", "verde", "azul", "amarillo"]
+for color in colores:
+    print(color)
