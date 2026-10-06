@@ -35,3 +35,25 @@ for persona in personas:
 colores = ["rojo", "verde", "azul", "amarillo"]
 for color in colores:
     print(color)
+
+num = 7
+while num <= 11:
+    print(num)
+    num += 1
+
+num = 5
+while num > 0:
+    sum = ""
+    nuevo_num = num
+    while nuevo_num > 0:
+        sum += f"{nuevo_num} "
+        nuevo_num -= 1
+    print(sum)
+    num -= 1
+
+numero = 150
+# Escribe el while aquí
+while numero <= 350:
+    if (numero % 5 == 0) and (numero % 7 == 0):
+        print(numero)
+    numero += 1
